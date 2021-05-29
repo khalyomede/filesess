@@ -1,0 +1,10 @@
+version: "3"
+services:
+  v:
+    build: ./docker/v
+    tty: true
+    volumes:
+      - .:/home/alpine
+    working_dir: /home/alpine
+    ports:
+      - "8000:8000"
